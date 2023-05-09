@@ -9,6 +9,13 @@ body{
     font-family: "Lato", sans-serif;
 }
 
+img{
+  width: 350px;
+  border: 50%;
+  text-align:center;
+  
+  }
+
 .sidenav {
   height: 100%;
   width: 0;
