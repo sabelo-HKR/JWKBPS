@@ -1,0 +1,81 @@
+body{
+    background: #BACDDB ;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+width: 250px;
+border: 50%;
+text-align:left;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #070707fb;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-block: 60px;
+    display: block;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #e2dfdf;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    display: block;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 0px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .TTTT1{
+    width: 20%;
+    border-radius: 50%;
+  }
+  .btn{
+    display: block;
+   color:  white;
+   padding: 10px;
+   background: black;
+   margin: 10px;
+   border-radius: 0%;
+   width: 5%;
+   text-decoration: none;
+   text-align: center;
+
+  }
+  .btn1{
+    display: block;
+   color:  white;
+   padding: 10px;
+   background: black;
+   margin: 10px;
+   width: 10%;
+   border-radius: 0%;
+   text-decoration: none;
+   text-align: center
+   
+
+  }
