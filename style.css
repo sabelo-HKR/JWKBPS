@@ -196,3 +196,15 @@ span.psw {
      width: 100%;
   }
 }
+
+.btn{
+  display: block;
+ color:  white;
+ padding: 10px;
+ background: black;
+ margin: 20px;
+ border-radius: 0%;
+ width: 20%;
+ text-decoration: none;
+ text-align: center;
+}
