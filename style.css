@@ -226,6 +226,7 @@ body {
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
+  position: absolute;
   float: left ;
   width: 25px;
   padding: 10px;
