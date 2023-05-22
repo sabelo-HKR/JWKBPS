@@ -226,10 +226,9 @@ body {
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
-  position: absolute;
-  float: left ;
+  display: inline-table;
   width: 25px;
-
+  padding: 10px;
 }
 
 /* Style the images inside the grid */
