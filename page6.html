@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
 <h1>
     Excurion  Gallery
 </h1>
@@ -17,42 +17,95 @@
     
 </p>
 
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
 <!-- Photo Grid -->
 <div class="row"> 
-    <div class="column">
-      <img src="EX Gallery/IMG-20230509-WA0011.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0012.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0013.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0014.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0015.jpg" style="width: 100%;">
-      <img src="EX Gallery/IMG-20230509-WA0016.jpg" style="width: 100%;">
-      <img src="EX Gallery/IMG-20230509-WA0017.jpg" style="width: 100%;">
-    </div>
-    <div class="column">
-      <img src="EX Gallery/IMG-20230509-WA0018.jpg" style="width: 100%;">
-      <img src="EX Gallery/IMG-20230509-WA0019.jpg" style="width:100%">
-      <img src="EX Gallery/IMG-20230509-WA0020.jpg" style="width: 100%;">
-      <img src="EX Gallery/IMG-20230509-WA0021.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0023.jpg" style="width:100%">
-      <img src="EX Gallery/IMG-20230509-WA0024.jpg" style="width: 100%;">
-    </div>  
-    <div class="column">
-      <img src="EX Gallery/IMG-20230509-WA0025.jpg" style="width: 100%;">
-      <img src="EX Gallery/IMG-20230509-WA0027.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0029.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0032.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0033.jpg" style="width:100%">
-      <img src="EX Gallery/IMG-20230509-WA0034.jpg" style="width: 100%">
-    </div>
-    <div class="column">
-      <img src="EX Gallery/IMG-20230509-WA0035.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0036.jpg" style="width:100%">
-      <img src="EX Gallery/IMG-20230509-WA0037.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0038.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0039.jpg" style="width: 100%">
-      <img src="EX Gallery/IMG-20230509-WA0040.jpg" style="width: 100%">
-    </div>
+  <div class="column">
+    <img src="EX Gallery/27711561857_status_7766515152434996b88ea52f1f7ab094.jpg" style="width:100%">
+    <img src="EX Gallery/Exursion 2.jpg" style="width:100%">
+    <img src="EX Gallery/Exursion1.jpg" style="width:100%">
+    <img src="EX Gallery/Girls.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0011.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0018.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0021.jpg" style="width:100%">
   </div>
+  <div class="column">
+    <img src="EX Gallery/IMG-20230509-WA0025.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0031.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0032.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0033.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0034.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0035.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="EX Gallery/IMG-20230509-WA0036.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0037.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0038.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0043.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0044.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0046.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0047.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="EX Gallery/IMG-20230509-WA0050.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0054.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0061.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0063.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0064.jpg" style="width:100%">
+    <img src="EX Gallery/IMG-20230509-WA0065.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 
 </body>
