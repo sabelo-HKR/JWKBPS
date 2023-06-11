@@ -8,19 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="index.html">Home</a>
+      <a href="page1.html">Matric Dance</a>
+     <a href="page2.html">Excursion</a>
+    <a href="page3.html">Term 2 Top Ten</a>
+    <a href="page4.html"> Valedictory</a>
+  <a href="page5.html">More About JWKBPS</a>
+ </div>
+ 
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+ <script>
+   function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+ }
+ function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+ }
+ </script>
 
 <h1>
     Excurion  Gallery
 </h1>
 
 <p>
-    
+   This page shows all the avaliable excursion photos since they all can't be display in the exursion. More images are yet to be added here if avaliable.
+    You can click on the number button to change the view of images!
 </p>
 
 <!-- Header -->
 <div class="header" id="myHeader">
-  <h1>Image Grid</h1>
-  <p>Click on the buttons to change the grid view.</p>
   <button class="btn" onclick="one()">1</button>
   <button class="btn active" onclick="two()">2</button>
   <button class="btn" onclick="four()">4</button>
